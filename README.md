@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TruthLens
 
 **Detection and Analysis of Misinformation on Digital Platforms Using Natural Language Processing Techniques**
@@ -79,3 +80,6 @@ Everything downstream (routes, database schema, and the React UI) will keep work
 - Authentication: JWT stored client-side, verified via Express middleware on protected routes.
 - Data model: `User` and `Analysis` collections in MongoDB, one-to-many relationship.
 - The NLP module is intentionally explainable (keyword/lexicon based) rather than a black box, since the project brief calls for "detailed explanations" of why content is flagged. This can be presented as the baseline/rule-based model, with a transformer-based model as a proposed enhancement / future work section.
+=======
+# truthlens-mern
+>>>>>>> 4de6ef4bf2518825af5dac7b544a3b4e6fe5e38f
