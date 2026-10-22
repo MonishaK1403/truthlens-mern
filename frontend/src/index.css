@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  @apply bg-white rounded-2xl border border-slate-200/80;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.035);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+
+.btn-primary {
+  @apply bg-brand-600 text-white font-semibold px-5 py-3 rounded-xl;
+  @apply hover:bg-brand-700 transition-all duration-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  box-shadow: 0 4px 12px rgba(15, 138, 120, 0.16);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  @apply bg-white text-slate-700 font-medium px-5 py-3 rounded-xl;
+  @apply border border-slate-200 hover:bg-slate-50 transition-all;
+}
+
+.input {
+  @apply w-full border border-slate-200 bg-white rounded-xl;
+  @apply px-4 py-3 text-sm text-slate-800;
+  @apply placeholder:text-slate-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-brand-100;
+  @apply focus:border-brand-500 transition-all;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1.5 px-3 py-1.5;
+  @apply rounded-full text-xs font-semibold;
+}
+
+::selection {
+  background: #c9f6ec;
+  color: #0c584f;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
